@@ -1,4 +1,4 @@
-# node-curl-impersonate
+# @pricething/curl
 
 Fork of [curl-impersonate-node](https://github.com/wearrrrr/curl-impersonate-node) that adds windows support along with some other features.
 
@@ -6,10 +6,10 @@ Fork of [curl-impersonate-node](https://github.com/wearrrrr/curl-impersonate-nod
 
 ```sh
 # yarn
-yarn add @qnaplus/node-curl-impersonate
+yarn add @pricething/curl
 
 # npm
-npm i @qnaplus/node-curl-impersonate
+npm i @pricething/curl
 ```
 
 ## Usage
