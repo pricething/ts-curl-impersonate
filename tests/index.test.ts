@@ -4,9 +4,10 @@ import { RequestBuilder } from "../src";
 test("Returns a successful GET reponse on TLS Fingerprinting protected URL", async () => {
     const response = await new RequestBuilder()
         .url("https://api.amiami.com/api/v1.0/items?s_keywords=touhou%20plush&pagecnt=2&pagemax=30&lang=eng")
+        .preset({ name: "chrome", version: "133a" })
         .header("x-user-key", "amiami_dev")
         .send();
-
+    console.log(response);
     expect(response.stderr).toBeUndefined();
     expect(equal(response.details?.http_code, 200));
 });
@@ -27,4 +28,4 @@ test("Returns a successful POST reponse", async () => {
 
     expect(response.stderr).toBeUndefined();
     expect(equal(response.details?.http_code, 200));
-})
+});
