@@ -38,7 +38,8 @@ export const ChromePresets: Record<ChromePresetVersion, Preset> = {
             "--tlsv1.2",
             "--alps",
             "--cert-compression brotli",
-            "--tls-grease"
+            "--tls-grease",
+            "--tls-signed-cert-timestamps"
         ]
     },
     "110": {
@@ -65,7 +66,8 @@ export const ChromePresets: Record<ChromePresetVersion, Preset> = {
             "--alps",
             "--tls-permute-extensions",
             "--cert-compression brotli",
-            "--tls-grease"
+            "--tls-grease",
+            "--tls-signed-cert-timestamps"
         ]
     },
     "116": {
@@ -92,7 +94,8 @@ export const ChromePresets: Record<ChromePresetVersion, Preset> = {
             "--alps",
             "--tls-permute-extensions",
             "--cert-compression brotli",
-            "--tls-grease"
+            "--tls-grease",
+            "--tls-signed-cert-timestamps"
         ]
     },
     "124": {
@@ -283,7 +286,8 @@ export const SafariPresets: Record<SafariPresetVersion, Preset> = {
             "--no-tls-session-ticket",
             "--cert-compression zlib",
             "--http2-pseudo-headers-order mspa",
-            "--location"
+            "--location",
+            "--tls-signed-cert-timestamps"
         ]
     },
     "18.0": {
@@ -311,7 +315,8 @@ export const SafariPresets: Record<SafariPresetVersion, Preset> = {
             "--tlsv1.0",
             "--no-tls-session-ticket",
             "--cert-compression zlib",
-            "--tls-grease"
+            "--tls-grease",
+            "--tls-signed-cert-timestamps"
         ]
     }
 };
